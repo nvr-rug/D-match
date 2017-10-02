@@ -50,6 +50,8 @@ var4 edge3 var1 % another comment
 etc
 ```
 
+Actual examples of our DRGs can be found in the **data** folder.
+
 ## Running D-match
 
 The most vanilla version can be run like this:
