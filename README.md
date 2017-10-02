@@ -27,6 +27,29 @@ D-match runs with Python 2.7. The memory component needs [psutil](https://pypi.p
 * D-match can have a memory limit per parallel thread
 * Since DRGs have variable types, D-match ensures that different variable types can never match
 
+## Input format ##
+
+DRGs are sets of triples, with each triple on a new line and with DRGs separated by a white line. Lines starting with '#' or '%' are ignored. Individual triples are formatted like this: var1 edge var2. The whitespace separates the values, so it can be spaces or tabs. Everything after the first 3 values is ignored, so it is possible to put a comment there.
+
+A DRG file would look like this:
+
+```
+% DRG 1
+% Sentence
+var1 edge var2
+var3 edge2 var4
+var5 edge3 var6
+
+% DRG2
+% Another sentence
+var1 edge var2
+var3 edge2 var2
+var4 edge3 var1
+
+%DRG3
+etc
+```
+
 ## Running D-match
 
 The most vanilla version can be run like this:
