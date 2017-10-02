@@ -36,7 +36,7 @@ A DRG file would look like this:
 ```
 % DRG 1
 % Sentence
-var1 edge var2
+var1 edge var2 % possible comment
 var3 edge2 var4
 var5 edge3 var6
 
@@ -44,7 +44,7 @@ var5 edge3 var6
 % Another sentence
 var1 edge var2
 var3 edge2 var2
-var4 edge3 var1
+var4 edge3 var1 % another comment
 
 %DRG3
 etc
