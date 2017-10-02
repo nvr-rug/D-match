@@ -31,24 +31,39 @@ D-match runs with Python 2.7. The memory component needs [psutil](https://pypi.p
 
 DRGs are sets of triples, with each triple on a new line and with DRGs separated by a white line. Lines starting with '#' or '%' are ignored. Individual triples are formatted like this: var1 edge var2. The whitespace separates the values, so it can be spaces or tabs. Everything after the first 3 values is ignored, so it is possible to put a comment there.
 
-A DRG file would look like this:
+A DRG file looks like this:
 
 ```
 % DRG 1
 % Sentence
-var1 edge var2 % possible comment
-var3 edge2 var4
-var5 edge3 var6
+b3 REF t1
+b1 person.n.01 c1 % possible comment
+c1 ARG1 x1
 
 % DRG2
 % Another sentence
-var1 edge var2
-var3 edge2 var2
-var4 edge3 var1 % another comment
+b1 time.n.01 c1
+c1 ARG1 t1
+b2 Time c2
 
 %DRG3
 etc
 ```
+
+### Variables ###
+
+The names of the variables are important for DRGs, since they denote different types. They always start with a lowercase letter ([a-z]), followed by a number ([\d]+).
+
+The first letter of the variable is used to set the type of the variable:
+
+* b  : DRS label 
+* c  : Discourse label
+* p  : Propositional referent
+*rest: Discourse referent
+
+Note that different types of variables can never match in D-match! 
+
+For more in-depth information about DRSs and DRGs, please see [Venhuizen (2015)](http://www.rug.nl/research/portal/publications/projection-in-discourse(a83cf9d5-d9ec-4be4-ba8e-e92b7dd4e823).html) or [Basile and Bos (2013)](https://hal.archives-ouvertes.fr/hal-01344582/document).
 
 Actual examples of our DRGs can be found in the **data** folder.
 
