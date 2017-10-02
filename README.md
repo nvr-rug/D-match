@@ -166,7 +166,7 @@ python d-match.py -f1 data/single_drg.prod -f2 data/100_drgs.gold -pr -r 100 -p 
 
 ## Application ##
 
-D-match is currently used in the [Parallel Meaning Bank](http://pmb.let.rug.nl)
+D-match is currently used in the [Parallel Meaning Bank](http://pmb.let.rug.nl/explorer/explore.php) to estimate the semantic similarity between DRGs of different languages. Come check it out!
 
 ## Author
 
