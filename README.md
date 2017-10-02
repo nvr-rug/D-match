@@ -1,7 +1,7 @@
 # D-match: evaluating scoped meaning representations
 
 D-match is a tool that is able to evaluate scoped meaning representations, in this case Discourse Representation Graphs (DRGs). It compares sets of triples and outputs an F-score. The tool can be used to evaluate different DRG-parsers.
-It is heavily based on [SMATCH](https://github.com/snowblink14/smatch), with a few modifications. It was developed as part of the [Parallel Meaning Bank](http://www.pmb.let.rug.nl).
+It is heavily based on [SMATCH](https://github.com/snowblink14/smatch), with a few modifications. It was developed as part of the [Parallel Meaning Bank](http:/pmb.let.rug.nl).
 
 ## Getting Started
 
@@ -166,7 +166,7 @@ python d-match.py -f1 data/single_drg.prod -f2 data/100_drgs.gold -pr -r 100 -p 
 
 ## Application ##
 
-D-match is currently used in the [Parallel Meaning Bank](http://www.pmb.let.rug.nl)
+D-match is currently used in the [Parallel Meaning Bank](http://pmb.let.rug.nl)
 
 ## Author
 
@@ -179,4 +179,4 @@ We are currently publishing a paper regarding D-match, once published the refere
 ## Acknowledgments
 
 * Thanks to [SMATCH](https://github.com/snowblink14/smatch) for publishing their code open source.
-* All members of the [Parallel Meaning Bank](http://www.pmb.let.rug.nl)
+* All members of the [Parallel Meaning Bank](http://pmb.let.rug.nl)
