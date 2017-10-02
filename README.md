@@ -59,7 +59,7 @@ The first letter of the variable is used to set the type of the variable:
 * b  : DRS label 
 * c  : Discourse label
 * p  : Propositional referent
-*rest: Discourse referent
+* rest: Discourse referent
 
 Note that different types of variables can never match in D-match! 
 
