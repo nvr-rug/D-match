@@ -1,7 +1,7 @@
 # D-match: evaluating scoped meaning representations
 
 D-match is a tool that is able to evaluate scoped meaning representations, in this case Discourse Representation Graphs (DRGs). It compares sets of triples and outputs an F-score. The tool can be used to evaluate different DRG-parsers.
-It is heavily based on [SMATCH](https://github.com/snowblink14/smatch), with a few modifications. It was developed as part of the [Parallel Meaning Bank](www.pmb.let.rug.nl).
+It is heavily based on [SMATCH](https://github.com/snowblink14/smatch), with a few modifications. It was developed as part of the [Parallel Meaning Bank](http://www.pmb.let.rug.nl).
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ b1 time.n.01 c1
 c1 ARG1 t1
 b2 Time c2
 
-%DRG3
+% DRG3
 etc
 ```
 
@@ -63,7 +63,7 @@ The first letter of the variable is used to set the type of the variable:
 
 Note that different types of variables can never match in D-match! 
 
-For more in-depth information about DRSs and DRGs, please see [Venhuizen (2015)](http://www.rug.nl/research/portal/publications/projection-in-discourse(a83cf9d5-d9ec-4be4-ba8e-e92b7dd4e823).html) or [Basile and Bos (2013)](https://hal.archives-ouvertes.fr/hal-01344582/document).
+For more in-depth information about DRSs and DRGs, please see [Basile and Bos (2013)](https://hal.archives-ouvertes.fr/hal-01344582/document) or [Venhuizen (2015)](http://www.rug.nl/research/portal/publications/projection-in-discourse(a83cf9d5-d9ec-4be4-ba8e-e92b7dd4e823).html).
 
 Actual examples of our DRGs can be found in the **data** folder.
 
@@ -164,9 +164,13 @@ Still doing the baseline experiment, but now we want more reliable scores, so av
 python d-match.py -f1 data/single_drg.prod -f2 data/100_drgs.gold -pr -r 100 -p 4 --baseline -runs 10
 ```
 
+## Application ##
+
+D-match is currently used in the [Parallel Meaning Bank](http://www.pmb.let.rug.nl)
+
 ## Author
 
-* **Rik van Noord** - PhD-student at University of Groningen - [Personal website](www.rikvannoord.nl)
+* **Rik van Noord** - PhD-student at University of Groningen - [Personal website](http://www.rikvannoord.nl)
 
 ## Paper ##
 
@@ -175,4 +179,4 @@ We are currently publishing a paper regarding D-match, once published the refere
 ## Acknowledgments
 
 * Thanks to [SMATCH](https://github.com/snowblink14/smatch) for publishing their code open source.
-* All members of the [Parallel Meaning Bank](www.pmb.let.rug.nl)
+* All members of the [Parallel Meaning Bank](http://www.pmb.let.rug.nl)
